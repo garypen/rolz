@@ -1,0 +1,7 @@
+William, 0
+Nell, 4
+Alan, 5
+Euripede, 0
+Thorin, 1
+Einar, 3
+Joshua, 0
