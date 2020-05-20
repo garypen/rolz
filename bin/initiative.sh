@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 if [ "${BASH_VERSINFO:-0}" -lt 4 ]; then
     echo "requires bash 4 or newer"
     exit 2
@@ -62,6 +61,10 @@ done
 shift $((OPTIND-1))
 
 [ "${1:-}" = "--" ] && shift
+
+if [ -z "${ROOM_ID}" ]; then
+    show_help
+fi
 
 # Process command file
 if [ -n "${FILE}" ]; then
